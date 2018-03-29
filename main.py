@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import NumericProperty, ReferenceListProperty
+from kivy.vector import Vector
 
 
 class PongGame(Widget):
@@ -21,7 +22,7 @@ class PongBall(Widget):
 
     # ball motion
     def move(self):
-        self.pos = Vector( * self.velocity) + self.pos
+        self.pos = Vector(* self.velocity) + self.pos
 
 
 if __name__ == '__main__':
